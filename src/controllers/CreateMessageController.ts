@@ -6,7 +6,7 @@ class CreateMessageController{
     async handle(req:Request, res: Response){
         //Automatizar depois
         //const {message} = req.body
-        const message = "Ola, eu sou o josias"
+        const message = "Ola, Gosto da tua amizade"
         const {user_id} = req
         
         const service = new CreateMessageService()

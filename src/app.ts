@@ -41,4 +41,5 @@ app.get("/signin/callback",(req, res)=>{
     return res.json(code)
 })
 
-app.listen((4000), ()=> console.log("Servidor rodando na porta 4000"))
+
+export {serverHttp, io}
