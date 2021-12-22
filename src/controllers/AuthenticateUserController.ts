@@ -8,7 +8,6 @@ class AuthenticateUserController{
         const code = "3ed3ab5b2fe97667d15c"
 
         const service = new AuthenticateUserService()
-
         try {
             const result =await service.execute(code)
             return res.json(result)

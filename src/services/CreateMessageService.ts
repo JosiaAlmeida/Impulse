@@ -1,0 +1,6 @@
+
+
+class CreateMessageService{
+
+}
+export {CreateMessageService}
