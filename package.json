@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/app.ts",
-    "go": "yarn dev"
+    "go": "yarn dev",
+    "prisma:init":"yarn prisma init",
+    "prisma:migrate":"yarn prisma migrate dev"
   },
   "keywords": [],
   "author": "",
