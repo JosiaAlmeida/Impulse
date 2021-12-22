@@ -1,10 +1,24 @@
 import "dotenv/config"
 import express from 'express'
 import bodyparser from 'body-parser'
+import {Server, Socket} from 'socket.io'
+import http from 'http'
 
 import {router} from './routes'
 
 const app = express()
+
+//configurando server
+const serverHttp = http.createServer(app)
+const io = new Server(serverHttp, {
+    cors:{
+        origin: "*"
+    }
+})
+
+io.on("connection", socket=>{
+    console.log("Usuario conectado no socket "+ socket.id)
+})
 
 app.use(router)
 
