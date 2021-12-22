@@ -5,8 +5,8 @@ import { CreateMessageService } from "../services/CreateMessageService";
 class CreateMessageController{
     async handle(req:Request, res: Response){
         //Automatizar depois
-        //const {message} = req.body
-        const message = "Ola, Gosto da tua amizade"
+        const {message} = req.body
+        //const message = "Ola, eu sou o josias"
         const {user_id} = req
         
         const service = new CreateMessageService()
