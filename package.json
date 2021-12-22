@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "go": "ts-node-dev --exit-child src/app.ts",
     "prisma:init":"yarn prisma init",
-    "prisma:migrate":"yarn prisma migrate dev"
+    "prisma:migrate":"yarn prisma migrate dev",
+    "prisma:studio": "yarn prisma studio"
   },
   "keywords": [],
   "author": "",
