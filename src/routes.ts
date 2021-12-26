@@ -1,4 +1,4 @@
-import { Router } from 'express'
+import { Request, Response, Router } from 'express'
 import { AuthenticateUserController } from './controllers/AuthenticateUserController'
 import { CreateMessageController } from './controllers/CreateMessageController'
 import { GetLast3MessagesController } from './controllers/GetLast3MessagesController'
@@ -11,6 +11,9 @@ const createMessage = new CreateMessageController()
 const Last3Message = new GetLast3MessagesController()
 const profileUser = new ProfileUserController()
 
+router.get('/', (req:Request, res: Response)=>{
+    res.send("Ok")
+})
 router.post("/authenticate", Auth.handle)
 
 //Rota com autenticacao
